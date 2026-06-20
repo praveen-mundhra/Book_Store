@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.dummy {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --accent-mint: #00C8B3;
+    --regular-white: #FFFFFF;
+    --light-purple: #B727CA;
+}
+
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+    background: linear-gradient(to right,#FE39DA,#40268E, #00C8B3);
+}
+.main-container{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    top:0%;
+    left: 0%;
+    
+}
+.navbutton{
+    display: flex;
+    gap: 25px;
+    color: #141414;
+    
+    list-style-type: none;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+      height: 31px;
+      width: 31px;
+}
+.company-name {
+     font-weight: bold;
+     color: #00C8B3;
+     font-size: 20px;   
+     
+}
+.navbutton a{
+    
+    font-size: 14px;
+    color: #0a0a0a;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+.sign-btn {
+    background-color: #00C8B3;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 400;
+    font-weight: bold;
+    display: inline-flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;  
+}
+
+.video-placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+.video-placeholder video{
+    border-radius: 50px;
+    max-width: 1150px;
+    height: auto;
+}
+.badge-purple{
+    background-color: #B727CA;
+    color:#FFFFFF;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.badge-green{
+    background-color: #00C8B3;
+    color:#FFFFFF;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
