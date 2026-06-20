@@ -24,7 +24,7 @@ body {
 .main-container{
     background-color: #FFFFFF;
     border-radius: 20px;
-    padding: 10px;
+    padding-top: 10px;
 }
 .navbar {
     display: flex;
@@ -33,8 +33,8 @@ body {
     gap: 20px;
     top:0%;
     left: 0%;
-    padding-left: 65px;
-    padding-right: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 .navbutton{
     display: flex;
@@ -58,8 +58,7 @@ body {
 .company-name {
      font-weight: bold;
      color: #00C8B3;
-     font-size: 20px;   
-     
+     font-size: 20px;    
 }
 .navbutton a{
     
@@ -86,7 +85,7 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 8px 18px;
+    padding: 15px 25px;
 }
 .hero-title1{
     padding: 8px 18px;
@@ -132,8 +131,9 @@ h1{
     text-align: left;
     font-size: 14px;
     font-weight: 500;
-    margin-right: 20px;
+    margin-right: 30px;
     padding: 8px 18px;
+
     
 }
 .stats{
@@ -203,3 +203,36 @@ h1{
     font-size: 10px;
 }
 
+.hero-middle-top{
+    background-color: #ECEBED;
+    display: flex;
+    gap: 60px; 
+}
+.hero-middle-top img{
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 90px;
+    width: 500px;
+    height: auto;
+   
+}
+.hero-middle-top-text h2{
+    margin-top: 90px;
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
+.hero-middle-top-text p{
+    margin-top: 18px;
+    font-size: 14px;
+}
+.hero-middle-top-text-1{
+   text-align: left;
+    align-items: center;
+}
+.hero-middle-top-text-1 h4{}
+.hero-middle-top-text-1 p{
+    margin-top: 18px;
+    font-size: 14px;
+}
