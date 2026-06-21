@@ -275,10 +275,10 @@ h1{
 }
 .online-courses h3{
     padding-top: 80px;
-    padding-left: 60px;
     padding-bottom: 20px;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bolder;
+    text-align: center;
 }
 .horizontal-scroll{
     width:100%;
@@ -291,12 +291,15 @@ h1{
     overflow-y: hidden;
     padding: 10px 20px;
     scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
 }
 .Courses img {
-    width: 450px;
-    height:483.75px;
+    width: 300px;
+    height:auto;
     object-fit: cover;
     flex-shrink: 0;
+    padding-bottom: 60px;
 }
 .Courses::-webkit-scrollbar {
     height: 8px;
@@ -371,6 +374,7 @@ span img{
     height:auto;  
 }
 .hero-middle-teacher{
+    background-color: #F6F5F5;
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -391,4 +395,90 @@ span img{
 .teacchers img{
     width:280px;
     height:auto; 
+}
+.hero-last{
+    background-color: #05201B;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-left: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.information{
+    display: flex;
+    gap: 40px;
+}
+.info-company-name{
+    display: flex;
+    
+}
+.info-company-name img{
+    width:35px;
+    padding-bottom: 20px;
+}
+.info-company-name h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.info-company-about p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.Company{
+    padding-left: 10px;
+}
+.Company h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.Company p{
+    font-size: 18px;
+}
+.Courses-info{
+    padding-left: 10px;
+}
+.Courses-info h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.Courses-info p{
+    font-size: 18px;
+}
+.Support-info{
+    padding-left: 10px;
+}
+.Support-info h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.Support-info p{
+    font-size: 18px;
+}
+.Contact-info{
+    padding-left: 10px;
+}
+.Contact-info h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.Contact-info p{
+    font-size: 18px;
+}
+.horizontal-ruler{
+    width: 1160px;
+    height: 1px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+.copyright {
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: -50px;
+    padding-right: 45px;
+    padding-bottom: 20px;
 }
