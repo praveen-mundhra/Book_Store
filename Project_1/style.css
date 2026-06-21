@@ -204,35 +204,191 @@ h1{
 }
 
 .hero-middle-top{
-    background-color: #ECEBED;
+    background-color: #F6F5F5;
     display: flex;
-    gap: 60px; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px; 
+    margin-bottom: 0px;
 }
 .hero-middle-top img{
     border-radius: 20px;
-    align-items: center;
-    margin-left: 80px;
-    margin-top: 90px;
-    width: 500px;
-    height: auto;
-   
+    width: 600px;
+    height: auto; 
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 80px;
 }
 .hero-middle-top-text h2{
-    margin-top: 90px;
     font-weight: bolder;
-    font-size: 50px;
-    
+    font-size: 55px;  
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 .hero-middle-top-text p{
-    margin-top: 18px;
     font-size: 14px;
+    line-height: 1.6;
 }
-.hero-middle-top-text-1{
-   text-align: left;
+.mission-vision-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+
+}
+.mission-vision {
+    display: flex;
+    gap: 10px;
+    align-content: flex-start;
+    margin-bottom: 45px;
+}
+.mission-vision img{
+    width:72px;
+    height:auto;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.mission-vision h4{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600px;
+    padding-bottom: 0px;
+}
+.mission-vision p{
+    font-size: 14px;  
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.vision{
+    display: flex;
+    flex-direction: column;  
+}
+.online-courses h3{
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.horizontal-scroll{
+    width:100%;
+    padding: 20px 0;
+}
+.Courses{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 20px;
+    scroll-behavior: smooth;
+}
+.Courses img {
+    width: 450px;
+    height:483.75px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.Courses::-webkit-scrollbar {
+    height: 8px;
+}
+.Courses::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.Courses::-webkit-scrollbar-track {
+    background: #eee;
+}
+.hero-middle-review{
+    background-color: #F6F5F5;
+    display:flex;
+    padding: 70px 60px;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px
 }
-.hero-middle-top-text-1 h4{}
-.hero-middle-top-text-1 p{
-    margin-top: 18px;
+.hero-middle-review-text{
+    display: flex;
+    flex-direction: column;
+}
+.hero-middle-review-text h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+.hero-middle-review-text p{
     font-size: 14px;
+    font-weight: 500;
+}
+.review-box{
+    display: flex;
+}
+
+.reviews p{
+    font-size: 13px;
+    padding-top: 5px;
+}
+.reviews span{
+    display: flex;
+    gap: 4px;
+}
+span img{
+    width: 30px;
+    height: auto;
+}
+.review-icon{
+    width: 500px;
+    height: auto;
+}
+.hero-middle-testimonials{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.hero-middle-testimonials-text{
+    text-align: center;
+}
+.hero-middle-testimonials h2{
+    font-size: 35px;
+}
+.testimonials{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.testimonials img{
+    width:300px;
+    height:auto;  
+}
+.hero-middle-teacher{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.hero-middle-teacher-text{
+    text-align: center;
+}
+.hero-middle-teacher-text h2{
+    font-size: 35px;
+}
+.teacchers{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.teacchers img{
+    width:280px;
+    height:auto; 
 }
