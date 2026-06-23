@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.dummy {
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --accent-mint: #00C8B3;
+    --regular-white: #FFFFFF;
+    --light-purple: #B727CA;
+}
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+    background: linear-gradient(to right,#FE39DA,#40268E, #00C8B3);
+}
+
+.signin-container{
+    background: #FFFFFF;
+    padding: 100px 100px;
+    margin: 100px 100px;
+    border-radius: 20px;
+}
+.company-details{
+    display: flex;
+    justify-content: center;
+}

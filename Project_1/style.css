@@ -285,7 +285,7 @@ h1{
 }
 .horizontal-scroll{
     width:100%;
-    max-width: 900px;
+    max-width: 700px;
     padding: 20px 0;
 }
 .Courses{
@@ -296,6 +296,7 @@ h1{
     padding: 10px 20px;
     scroll-behavior: smooth;
     align-items: center;
+    justify-content: center;
 }
 .Courses img {
     width: 300px;
@@ -303,6 +304,7 @@ h1{
     object-fit: cover;
     flex-shrink: 0;
     padding-bottom: 60px;
+    
 }
 .Courses::-webkit-scrollbar {
     height: 8px;
@@ -357,6 +359,7 @@ span img{
 .hero-middle-testimonials{
     padding-top: 70px;
     padding-bottom: 70px;
+    justify-content: center;
 }
 .hero-middle-testimonials-text{
     text-align: center;
@@ -368,12 +371,9 @@ span img{
     display: flex;
     padding-top: 30px;
     gap: 20px;
-    align-items: center;
     padding-bottom: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
     justify-content: center;
 }
 .testimonials img{
@@ -437,6 +437,7 @@ span img{
     padding-left: 70px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    width:100%;
 }
 .information{
     display: flex;
@@ -504,14 +505,14 @@ span img{
     color: #FFFFFF;
     text-decoration-line: none;
 }
-.Support-info{
+ .Support-info{
     padding-left: 10px;
-}
-.Support-info h4{
+ }
+ .Support-info h4{
     font-size: 30px;
     padding-bottom: 20px;
-}
-.Support-info-list{
+ }
+ .Support-info-list{
     color: #FFFFFF;
     font-size: 15px;
     list-style-type: none;
@@ -520,22 +521,22 @@ span img{
     text-align: left;
     justify-content: space-between;
     padding-left: 10px;
-}
-.Support-info-list li{
+ }
+ .Support-info-list li{
     padding-bottom: 20px;
-}
-.Support-info-list a{
+ }
+ .Support-info-list a{
     color: #FFFFFF;
     text-decoration-line: none;
     gap: 0px;
-}
-  .Contact-info{
+ }
+ .Contact-info{
     padding-left: 10px;
-  }
-  .Contact-info h4{
+ }
+ .Contact-info h4{
     font-size: 30px;
     padding-bottom: 20px;
-  }
+ }
  .Contact-info-list{
     color: #FFFFFF;
     font-size: 15px;
@@ -676,8 +677,8 @@ span img{
     }
 
     .Courses{
+        display: flex;
         justify-content: flex-start;
-        align-content: center;
     }
 
     .hero-middle-review{
@@ -696,11 +697,13 @@ span img{
     }
 
     .testimonials{
-        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .teachers{
-        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .testimonials img,
@@ -709,15 +712,20 @@ span img{
         max-width: 300px;
     }
 
-    .information{
-        flex-direction: column;
-    }
-
-    .hero-last{
+    .hero-last{       
         padding-left: 20px;
         padding-right: 20px;
     }
 
+    .information{
+        flex-direction: column;
+        padding: 7px;
+    }
+    .Company-info-list li, .Courses-info-list li, .Contact-info-list li, .Support-info-list li{
+        list-style-type: disc;
+        padding: 7px;
+    }
+    
     .horizontal-ruler{
         width: 100%;
     }
