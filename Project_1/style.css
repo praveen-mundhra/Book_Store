@@ -677,6 +677,7 @@ span img{
 
     .Courses{
         justify-content: flex-start;
+        align-content: center;
     }
 
     .hero-middle-review{
