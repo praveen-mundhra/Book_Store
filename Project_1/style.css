@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 .dummy {
     font-family: "Inter", sans-serif;
 }
-
 :root {
     --accent-mint: #00C8B3;
     --regular-white: #FFFFFF;
     --light-purple: #B727CA;
 }
-
 * {
     margin: 1px;
     padding: 1px;
@@ -17,6 +14,7 @@
 }
 
 body {
+    width: 100%;
     font-family: "Inter", sans-serif;
     padding: 20px;
     background: linear-gradient(to right,#FE39DA,#40268E, #00C8B3);
@@ -148,11 +146,9 @@ h1{
     margin-top: 10px;
     margin-right: 8px;
     text-align: left;
-
 }
 .stats-item{
-   padding: 4px 18px; 
-   padding-right: 18px;
+   gap: 20px; 
 }
 .stats-item\h2{
     font-size: 30px;
@@ -165,11 +161,12 @@ h1{
     align-items: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .video-placeholder video{
     border-radius: 50px;
+    width: 100%;
     max-width: 1150px;
     height: auto;
 }
@@ -190,14 +187,14 @@ h1{
     
 }
 .outcomes-1 img{
-    width: 150px;
-    height:150px;
+    width: 100%;
+    max-width: 150px;
+    height:auto;
     margin-right: -50px;
     margin-left: -30px;
     margin-top: -50px;
     margin-bottom: 20px;
 }
-
 .text h4{
     margin: 0;
     font-size: 20px;
@@ -288,6 +285,7 @@ h1{
 }
 .horizontal-scroll{
     width:100%;
+    max-width: 900px;
     padding: 20px 0;
 }
 .Courses{
@@ -298,7 +296,6 @@ h1{
     padding: 10px 20px;
     scroll-behavior: smooth;
     align-items: center;
-    justify-content: center;
 }
 .Courses img {
     width: 300px;
@@ -372,12 +369,29 @@ span img{
     padding-top: 30px;
     gap: 20px;
     align-items: center;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
     justify-content: center;
-    padding-bottom: 40px;
 }
 .testimonials img{
-    width:300px;
-    height:auto;  
+    width: 100%;
+    max-width:250px;
+    height:auto; 
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+.testimonials::-webkit-scrollbar {
+    height: 8px;
+}
+.testimonials::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.testimonials::-webkit-scrollbar-track {
+    background: #eee;
 }
 .hero-middle-teacher{
     background-color: #F6F5F5;
@@ -390,17 +404,31 @@ span img{
 .hero-middle-teacher-text h2{
     font-size: 35px;
 }
-.teacchers{
+.teachers{
     display: flex;
     padding-top: 30px;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding-bottom: 40px;
+    justify-content: center;
 }
-.teacchers img{
-    width:280px;
+.teachers img{
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 100%;
+    max-width:250px;
     height:auto; 
+}
+.teachers::-webkit-scrollbar {
+    height: 8px;
+}
+.teachers::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.teachers::-webkit-scrollbar-track {
+    background: #eee;
 }
 .hero-last{
     background-color: #05201B;
@@ -501,14 +529,14 @@ span img{
     text-decoration-line: none;
     gap: 0px;
 }
-.Contact-info{
+  .Contact-info{
     padding-left: 10px;
-}
-.Contact-info h4{
+  }
+  .Contact-info h4{
     font-size: 30px;
     padding-bottom: 20px;
-}
-.Contact-info-list{
+  }
+ .Contact-info-list{
     color: #FFFFFF;
     font-size: 15px;
     list-style-type: none;
@@ -517,19 +545,19 @@ span img{
     text-align: left;
     justify-content: space-between;
     padding-left: 10px;
-}
-.Contact-info-list li{
+ }
+ .Contact-info-list li{
     padding-bottom: 20px;
-}
-.Contact-info-list a{
+ }
+ .Contact-info-list a{
     color: #FFFFFF;
     text-decoration-line: none;
-}
-.Company-info-list a:hover , .Courses-info-list a:hover , .Support-info-list a:hover , .Contact-info-list a:hover{
+ }
+ .Company-info-list a:hover , .Courses-info-list a:hover , .Support-info-list a:hover , .Contact-info-list a:hover{
     color: #56E496;
     transform:translateX(5px);
-}
-.horizontal-ruler{
+ }
+ .horizontal-ruler{
     width: 100%;
     max-width: 1160px;
     height: 1px;
@@ -539,12 +567,157 @@ span img{
     background-color: #FFFFFF;
     margin-bottom: 5px;
     border-radius: 0px;
-}
-.copyright {
+ }
+ .copyright {
     text-align: center;
     justify-content: center;
     font-size: 12px;
     padding-left: -50px;
     padding-right: 45px;
     padding-bottom: 20px;
+ }
+
+@media screen and (max-width: 768px){
+
+    
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbutton{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-top{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-1-a,
+    .title-1-b{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-title1{
+        padding-left: 0;
+    }
+
+    .hero-top-right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .paragraph-1{
+        margin-right: 0;
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video-placeholder video{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .outcomes{
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .outcomes-1{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .hero-middle-top{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-middle-top img{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .right-content{
+        margin: 0;
+        text-align: center;
+    }
+
+    .mission-vision{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .mission-vision img{
+        width: 60px;
+        height: auto;
+        padding-left: 0px;
+    }
+
+    .mission-vision h4{
+        text-align: left;
+        
+    }
+    .mission-vision p{
+        text-align: left;
+        
+    }
+
+    .Courses{
+        justify-content: flex-start;
+    }
+
+    .hero-middle-review{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .review-box{
+        flex-direction: column;
+    }
+
+    .review-icon{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .testimonials{
+        flex-direction: row;
+    }
+
+    .teachers{
+        flex-direction: row;
+    }
+
+    .testimonials img,
+    .teachers img{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .information{
+        flex-direction: column;
+    }
+
+    .hero-last{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .horizontal-ruler{
+        width: 100%;
+    }
 }
